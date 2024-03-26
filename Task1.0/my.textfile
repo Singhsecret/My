@@ -1,0 +1,56 @@
+# Notes API
+
+This repository contains a secure and scalable RESTful API for managing notes, built using FastAPI.
+
+## Overview
+
+The API allows users to perform CRUD operations on notes, share notes with other users, and search for notes based on keywords.
+
+## Features
+
+- User authentication using JWT tokens
+- CRUD operations on notes
+- Note sharing functionality
+- Keyword-based search
+
+## Technical Details
+
+- Framework: FastAPI
+- Database: MongoDB
+- Authentication: JWT tokens
+- Testing Framework: PyTest
+
+## Setup
+
+1. Clone the repository:
+
+   bash
+   git clone https://github.com/yourusername/notes-api.git
+
+//Run the FastAPI application using Uvicorn
+
+uvicorn main:app --reload
+
+The API will be available at http://localhost:8000
+
+//Run the PyTest tests using
+
+pytest
+
+//API Endpoints
+
+POST /api/auth/signup
+POST /api/auth/login
+GET /api/notes
+GET /api/notes/{note_id}
+POST /api/notes
+PUT /api/notes/{note_id}
+DELETE /api/notes/{note_id}
+POST /api/notes/{note_id}/share
+GET /api/search?q={query}
+
+// License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+
+
